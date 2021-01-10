@@ -250,14 +250,19 @@ nav {
 }
 
 @media screen and (max-width:768px) {
+    html {
+        overflow-x: hidden;
+    }
+    
     .hamburger {
         display: block;
+        z-index: 99;
     }
     .nav-links {
         width: 50%;
-        height: 90%;
+        min-height: 90vh;
         position: absolute;
-        top: 10%;
+        top: 0%;
         right: 0%;
         display: flex;
         justify-content: space-around;
